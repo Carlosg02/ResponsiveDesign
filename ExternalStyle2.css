@@ -1,0 +1,164 @@
+A:link {color: green}
+A:visited,
+A:active {color: green}
+A:hover {text-decoration: overline;color: teal}
+
+* {
+	margin: 0;
+}
+
+Body {
+	background-color: white;
+	font-family: cambria;
+	color: gray
+}
+
+nav {
+	background: #F1F1F1;
+	position: fixed;
+	bottom: 0;
+	height: 65px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 30px;
+}
+
+nav a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #f2f2f2;
+	text-decoration: none;
+	font-size: 15px;
+}
+
+#logo {
+	width: 95%;
+	padding-top: 10px;
+}
+.logo{
+	text-align: center;
+}
+
+H1 {
+	font-size: 30pt;
+	text-align: center
+}
+
+H3 {
+	color: gray;
+}
+
+P {
+	font-size: 12pt;
+	font-family: monospace
+} 
+
+.reservations{
+	text-align: center;
+}
+Form {
+	font-family: monospace;
+	text-align: center;
+	color: white;
+	background-color: green;
+	display: grid;
+	grid-template-columns:1fr 1fr;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	gap:5px;
+}
+
+.review{
+	text-align: center;
+	margin-top: 10px;
+}
+.reviewForm H5{
+	font-size: 12pt;
+}
+.review hr{
+	width: 90%;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top: 5px;
+	background-color: green;
+	border-radius: 0;
+	height: 2px;
+}
+.reviewForm{
+	margin-bottom: 65px;
+	text-align: center;
+}
+
+/* ABOUT US PAGE */
+.mission{
+	margin:5px
+}
+.pic{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+}
+.movement{
+	margin-top: 5px;
+	margin-bottom: 70px;
+}
+.movement p{
+	margin-bottom: 5px;
+}
+/* CONTACT US */
+Table,th,td{
+	width: 90%;
+	font-family: monospace;
+	font-size: 12pt;
+	color: white;
+	background-color: #A2CF70;
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px solid #004B2D;
+	border-collapse: collapse;
+}
+th,td{
+	width: 50%;
+}
+.contactText{
+	text-align: center;
+	font-weight: bold;
+}
+@media screen and (min-width: 800px) {
+nav {
+	background: #F1F1F1;
+	height: 65px;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	bottom: auto;
+	margin-top: 0;
+	position: relative;
+}
+.logo{
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.reservations Form{
+	max-width: 500px;
+	margin:auto;
+}
+.resAndRev{
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-items: stretch;
+}
+.review{
+	grid-column: 2/3;
+}
+.reviewForm{
+	grid-column: 3/4;
+}
+.reviewForm H5{
+	font-size: 14pt;
+}
+}
